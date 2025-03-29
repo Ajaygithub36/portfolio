@@ -1,0 +1,27 @@
+.project-section {
+    min-height: 100vh; /* Ensuring full screen height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    color: var(--text-color);
+}
+
+
+
+/* Cards Grid */
+.project-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .project-section {
+        min-height: auto;
+        padding: 20px 0;
+    }
+}

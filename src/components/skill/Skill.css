@@ -1,0 +1,117 @@
+/* Skill Section */
+.skill-section {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 10%;
+
+}
+
+/* Heading */
+
+
+/* Grid Layout */
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    justify-items: center;
+}
+
+/* Skill Card */
+.skill-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Skill Card Hover Effect */
+.skill-card:hover {
+    transform: scale(1.1) rotate(2deg);
+    background: rgba(255, 128, 0, 0.9); /* Highlighted Color */
+    color: white;
+}
+
+/* Skill Icon */
+.skill-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Skill Name */
+.skill-card h3 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Dark & Light Mode */
+:root {
+    --home-bg: linear-gradient(135deg, #0f172a, #1e293b);
+    --text-color: #f8fafc;
+}
+
+.light-mode {
+    --home-bg: #ffffff;
+    --text-color: #111827;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skill-section {
+        padding: 40px 5%;
+    }
+
+    .skill-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 15px;
+    }
+
+    .skill-card {
+        width: 120px;
+        height: 120px;
+        padding: 15px;
+    }
+
+    .skill-icon {
+        font-size: 1.8rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skill-card {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+    }
+
+    .skill-icon {
+        font-size: 1.5rem;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
+}

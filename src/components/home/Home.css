@@ -1,0 +1,116 @@
+/* Home Section */
+.home-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Left Section (Text Content) */
+.home-section-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Headings */
+.home-section-left h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.2;
+}
+
+/* Highlighted Text */
+.highlight {
+    font-weight: 700;
+    color: #FF8000; /* Light Blue Accent */
+}
+
+/* Animated Subheading */
+.home-section-left h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--subtext-color);
+}
+
+/* Paragraph */
+.home-section-left p {
+    font-size: 1.2rem;
+    color: var(--subtext-color);
+    line-height: 1.6;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    background: var(--button-bg);
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 50%;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.cta-button:hover {
+    background: var(--button-bg); /* Brighter Blue */
+    transform: scale(1.05);
+}
+
+/* Right Section (Image/Illustration) */
+.home-section-right {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Make Image Responsive */
+.home-section-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 🌙 Dark & 🌞 Light Mode Styling */
+:root {
+    --home-bg: linear-gradient(135deg, #0f172a, #1e293b); /* Dark Mode Background */
+    --text-color: #f8fafc;
+    --subtext-color: #cbd5e1;
+}
+
+.light-mode {
+    --home-bg: #ffffff; /* Light Mode Background */
+    --text-color: #111827;
+    --subtext-color: #374151;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .home-section {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 100px  40px;
+    }
+
+    .home-section-left, .home-section-right {
+        width: 100%;
+    }
+
+    .home-section-left h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-section-left h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}

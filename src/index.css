@@ -1,0 +1,120 @@
+:root {
+  /* Text Rendering & Font Smoothing */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* 🌙 Dark Mode Theme */
+  --dark-bg: linear-gradient(135deg, #0f172a, #1e293b);
+  --dark-text: #ffffff;
+  --dark-subtext: #cbd5e1;
+  --nav-border-dark: #FF8000;
+
+  /* 🌞 Light Mode Theme */
+  --light-bg: #ffffff;
+  --light-text: #111827;
+  --light-subtext: #374151;
+  --nav-border-light: #FF8000;
+
+  /* 🎨 Common Theme Variables */
+  --primary-font: "Roboto", sans-serif;
+  --highlight-color: #FF8000; /* Light Blue Accent */
+  --button-bg: #FF8000;
+  --button-hover-bg: hsl(30, 100%, 50%);
+  --border-radius: 8px;
+  --transition-speed: 0.4s ease-in-out;
+}
+
+/* Light Mode Styles */
+.light-mode {
+  --home-bg: var(--light-bg);
+  --text-color: var(--light-text);
+  --subtext-color: var(--light-subtext);
+  --nav-border: var(--nav-border-light);
+}
+
+/* Dark Mode Styles */
+/* .dark-mode {
+  --home-bg: var(--dark-bg);
+  --text-color: var(--dark-text);
+  --subtext-color: var(--dark-subtext);
+  --nav-border: var(--nav-border-dark);
+} */
+
+/* 🌍 Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* 📜 Body Styling */
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: var(--home-bg);
+  color: var(--text-color);
+  font-family: var(--primary-font);
+  transition: background var(--transition-speed), color var(--transition-speed);
+  padding: 0 7rem;
+}
+
+/* 📌 Typography Reset */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  color: inherit;
+}
+
+/* Heading */
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--highlight-color);
+
+}
+
+/* ✨ Responsive Adjustments */
+@media (max-width: 768px) {
+  body {
+    padding: 0 1.5rem;
+  }
+}
+
+
+/* Scrollbar for Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b; /* Dark background */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff8000; /* Scrollbar color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff9900; /* Brighter color on hover */
+}
+
+/* Scrollbar for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ff8000 #1e293b;
+}
+
+
+.light-mode ::-webkit-scrollbar-thumb { background: #333; }
