@@ -18,7 +18,7 @@ const Home = () => {
 
         <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8, duration: 1 }}>Passionate about building modern, high-performance, and scalable web applications.</motion.p>
 
-        <motion.div> <a href="/portfolio/assets/resume.pdf "  download={"Ajay_Kumar_Resume.pdf"}>
+        <motion.div> <a href="/portfolio/assets/resume.pdf"  download={"Ajay_Kumar_Resume.pdf"}>
         <motion.button className="cta-button" whileHover={{ scale: 1.1, backgroundColor: "#FF8000" }} whileTap={{ scale: 0.9 }} animate={{ scale: [1, 1.05, 1] }} transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}>Download Resume</motion.button>
         </a> </motion.div>
       </motion.div>
