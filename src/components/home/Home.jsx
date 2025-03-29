@@ -23,7 +23,7 @@ const Home = () => {
 
       {/* Right Section */}
       <motion.div className="home-section-right" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
-        <motion.img src="/assets/dev2-min.png" alt="Ajay Kumar" className="profile-image" animate={{ y: [0, -10, 0] }} transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }} />
+        <motion.img src="/portfolio/assets/dev2-min.png" alt="Ajay Kumar" className="profile-image" animate={{ y: [0, -10, 0] }} transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }} />
       </motion.div>
 
     </motion.section>
