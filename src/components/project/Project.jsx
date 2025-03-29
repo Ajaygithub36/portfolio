@@ -4,9 +4,9 @@ import "./Project.css";
 import Card from "../card/Card";
 
 const projects = [
-  { id: 1, title: "End Point Security (EPS)", description: "Which is used to Protect our device which is connected to the  Network its act like a security gaurd it protect from unauthrized user can not steal important information  ", img: "/assets/project1.jpg" },
-  { id: 2, title: "Web Application Firewall (WAF)", description: "This is project two.", img: "/assets/project2.jpg" },
-  { id: 3, title: "Health Highway", description: "This is project three.", img: "/assets/project3.png" },
+  { id: 1, title: "End Point Security (EPS)", description: "Which is used to Protect our device which is connected to the  Network its act like a security gaurd it protect from unauthrized user can not steal important information  ", img: "/portfolio/assets/project1.jpg" },
+  { id: 2, title: "Web Application Firewall (WAF)", description: "This is project two.", img: "/portfolio/assets/project2.jpg" },
+  { id: 3, title: "Health Highway", description: "This is project three.", img: "/portfolio/assets/project3.png" },
 ];
 
 const Project = () => {

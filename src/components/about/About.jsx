@@ -48,7 +48,7 @@ const About = () => {
       <motion.section className="about-section-content">
         {/* Image Animation with Hover Effect */}
         <motion.div className="about-img" variants={imageVariants} whileHover="hover">
-          <motion.img alt="Profile" src="/assets/dev3-min.png" />
+          <motion.img alt="Profile" src="/portfolio/assets/dev3-min.png" />
         </motion.div>
 
         {/* Text Content Animation */}
