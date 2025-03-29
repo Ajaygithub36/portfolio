@@ -48,7 +48,7 @@ const Footer = () => {
           </motion.a>
         </motion.div>
 
-        <p>© {new Date().getFullYear()} Your Name. All Rights Reserved.</p>
+        <p>© {new Date().getFullYear()} Ajay Kumar. All Rights Reserved.</p>
       </motion.div>
     </motion.footer>
   );
